@@ -8,9 +8,9 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 
 ## Project Metadata
 ### Authors
-- **Team:** Mohammad Ahmad, Umar Abdullah and Malik Hussain
+- **Team:** Maha Balhareth, Mushyirah Alharbi and Razan Alhumud
 - **Supervisor Name:** Dr. Muzammil Behzad
-- **Affiliations:** SABIC, ARAMCO and KFUPM
+- **Affiliations:** KFUPM
 
 ### Project Documents
 - **Presentation:** [Project Presentation](/presentation.pptx)
