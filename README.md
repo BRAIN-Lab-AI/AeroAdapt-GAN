@@ -17,7 +17,7 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 - **Report:** [Project Report](/report.pdf)
 
 ### Reference Paper
-- Unsupervised Domain Adaptation Using Generative Adversarial Networks for Semantic Segmentation of Aerial Images ([https://arxiv.org/abs/2112.10752](https://www.mdpi.com/2072-4292/11/11/1369))
+- [Unsupervised Domain Adaptation Using Generative Adversarial Networks for Semantic Segmentation of Aerial Images] (https://www.mdpi.com/2072-4292/11/11/1369)
 
 ### Reference Dataset
 - [2D Semantic Labeling](https://www.isprs.org/education/benchmarks/UrbanSemLab/semantic-labeling.aspx)
