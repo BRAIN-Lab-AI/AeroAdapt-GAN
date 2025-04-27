@@ -128,8 +128,9 @@ The workflow of the proposed CycleGAN-DeeplabV3 model is designed to perform uns
     ```
 
 ## Acknowledgments
-- **Open-Source Communities:** Thanks to the contributors of PyTorch, Hugging Face, and other libraries for their amazing work.
-- **Individuals:** Special thanks to bla, bla, bla for the amazing team effort, invaluable guidance and support throughout this project.
-- **Resource Providers:** Gratitude to ABC-organization for providing the computational resources necessary for this project.
+- **Open-Source Communities:** Thanks to the contributors of TensorFlow, Keras, OpenCV, and related open-source libraries for their exceptional resources and continuous development efforts.
+- **Individuals:** Special thanks to our supervisor Dr. Muzammil Behzad for invaluable guidance and support throughout this project.
+- **Resource Providers:** Gratitude to to the International Society for Photogrammetry and Remote Sensing (ISPRS) for providing comprehensive aerial imagery datasets that enabled thorough experimentation.
+- **Research Community:** Appreciation to researchers whose foundational work and insights in unsupervised domain adaptation and semantic segmentation significantly guided this research.
 
 
