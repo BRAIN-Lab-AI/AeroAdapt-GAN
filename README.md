@@ -27,16 +27,14 @@ The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning a
 ## Project Technicalities
 
 ### Terminologies
-- **Diffusion Model:** A generative model that progressively transforms random noise into coherent data.
-- **Latent Space:** A compressed, abstract representation of data where complex features are captured.
-- **UNet Architecture:** A neural network with an encoder-decoder structure featuring skip connections for better feature preservation.
-- **Text Encoder:** A model that converts text into numerical embeddings for downstream tasks.
-- **Perceptual Loss:** A loss function that measures high-level differences between images, emphasizing perceptual similarity.
-- **Tokenization:** The process of breaking down text into smaller units (tokens) for processing.
-- **Noise Vector:** A randomly generated vector used to initialize the diffusion process in generative models.
-- **Decoder:** A network component that transforms latent representations back into image space.
-- **Iterative Refinement:** The process of gradually improving the quality of generated data through multiple steps.
-- **Conditional Generation:** The process where outputs are generated based on auxiliary inputs, such as textual descriptions.
+- **Semantic Segmentation:** A pixel-level image classification process assigning class labels to each pixel in an image.
+- **CycleGAN:** A type of generative adversarial network utilizing cycle-consistency loss for translating images between unpaired source and target domains.
+- **DeepLabV3 Architecture:** A state-of-the-art segmentation model employing atrous spatial pyramid pooling (ASPP) for capturing multi-scale contextual information.
+- **ResNet101 Backbone:** A deep convolutional neural network featuring residual connections designed to mitigate vanishing gradient issues and enhance feature extraction.
+- **Mean Intersection-over-Union (Mean IoU):** A metric measuring segmentation accuracy by quantifying the overlap between predicted and actual segmented regions across multiple classes.
+- **Early Stopping:** A regularization technique halting model training once validation performance metrics cease to improve, thus preventing overfitting.
+- **Adversarial Loss:** Loss used in GAN training to measure how well the generator network fools the discriminator network.
+- **Unsupervised Domain Adaptation:** A learning scenario adapting a model trained on labeled source-domain data to unlabeled target-domain data without requiring additional labeling.
 
 ### Problem Statements
 - **Problem 1:** Achieving high-resolution and detailed images using conventional diffusion models remains challenging.
