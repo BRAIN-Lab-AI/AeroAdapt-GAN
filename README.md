@@ -4,7 +4,7 @@
 # Adversarial Unsupervised Domain Adaptation for Aerial Image Segmentation
 
 ## Introduction
-The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning approach designed for unsupervised domain adaptation in semantic segmentation of aerial imagery, leveraging advanced generative adversarial techniques to bridge significant domain shifts between source and target datasets. By integrating a powerful CycleGAN architecture with a robust DeeplabV3 segmentation network, complemented by ResNet101 as the backbone, custom mean-IoU-based early stopping criteria, and strategic regularization techniques such as dropout and learning rate decay, the model efficiently translates images across different sensor modalities, iteratively refining segmentation outputs. This sophisticated integration not only addresses the persistent challenges of domain-induced performance degradation and training instability seen in traditional adaptation methods but also significantly enhances generalization, consistency, and accuracy, thereby opening new possibilities for reliable and scalable remote sensing applications in urban planning, environmental monitoring, and geospatial intelligence.
+The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning approach designed for unsupervised domain adaptation in semantic segmentation of aerial imagery, leveraging advanced generative adversarial techniques to bridge significant domain shifts between source and target datasets. By integrating a powerful CycleGAN architecture with a robust DeeplabV3 segmentation network, complemented by ResNet50 as the backbone, custom mean-IoU-based early stopping criteria, and strategic regularization techniques such as dropout and learning rate decay, the model efficiently translates images across different sensor modalities, iteratively refining segmentation outputs. This sophisticated integration not only addresses the persistent challenges of domain-induced performance degradation and training instability seen in traditional adaptation methods but also significantly enhances generalization, consistency, and accuracy, thereby opening new possibilities for reliable and scalable remote sensing applications in urban planning, environmental monitoring, and geospatial intelligence.
 
 ## Project Metadata
 ### Authors
@@ -32,7 +32,7 @@ The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning a
 - **CycleGAN:** A type of generative adversarial network utilizing cycle-consistency loss for translating images between unpaired source and target domains.
 - **Adversarial Training:** Training methodology involving competition between generator and discriminator to achieve realistic synthetic data generation.
 - **DeepLabV3 Architecture:** A state-of-the-art segmentation model employing atrous spatial pyramid pooling (ASPP) for capturing multi-scale contextual information.
-- **ResNet101 Backbone:** A deep convolutional neural network featuring residual connections designed to mitigate vanishing gradient issues and enhance feature extraction.
+- **ResNet50 Backbone:** A deep convolutional neural network featuring residual connections designed to mitigate vanishing gradient issues and enhance feature extraction.
 - **Mean Intersection-over-Union (Mean IoU):** A metric measuring segmentation accuracy by quantifying the overlap between predicted and actual segmented regions across multiple classes.
 - **Early Stopping:** A regularization technique halting model training once validation performance metrics cease to improve, thus preventing overfitting.
 - **Adversarial Loss:** Loss used in GAN training to measure how well the generator network fools the discriminator network.
@@ -55,7 +55,7 @@ The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning a
 ### Loopholes
 - **Domain Shift Sensitivity:** Models remain sensitive to significant domain shifts caused by large variations in sensor modalities, resolutions, and class distributions.
 - **Translation Quality:** Potential inconsistencies in maintaining structural and semantic integrity during unsupervised image translation, affecting downstream segmentation tasks.
-- **Computational Efficiency:** The CycleGAN and DeepLabV3-ResNet101 integration demands substantial computational resources (e.g., high-performance GPUs), limiting practical deployment and scalability.
+- **Computational Efficiency:** The CycleGAN and DeepLabV3-ResNet50 integration demands substantial computational resources (e.g., high-performance GPUs), limiting practical deployment and scalability.
 
 ### Problem vs. Ideation: Proposed 3 Ideas to Solve the Problems
 1. **Adaptive Domain Alignment:**
@@ -68,7 +68,7 @@ Implement lightweight neural network components and optimized training technique
 ### Proposed Solution: Code-Based Implementation
 This repository provides an implementation of an enhanced unsupervised domain adaptation model for semantic segmentation using TensorFlow and Keras. The solution includes:
 
-- **DeepLabV3-ResNet101 Segmentation Model:** Implements a robust semantic segmentation framework optimized for multi-scale feature extraction through atrous spatial pyramid pooling (ASPP).
+- **DeepLabV3-ResNet50 Segmentation Model:** Implements a robust semantic segmentation framework optimized for multi-scale feature extraction through atrous spatial pyramid pooling (ASPP).
 - **CycleGAN Domain Adaptation:** Utilizes dual generator-discriminator pairs with dropout and instance normalization layers to perform effective unsupervised image translation between source and target domains.
 - **Custom Early Stopping:** Incorporates a mean Intersection-over-Union (mean IoU) metric for monitoring validation performance, ensuring optimal training efficiency and preventing overfitting.
 - **Automated Data Preprocessing Pipeline:** Systematically partitions large aerial imagery into uniformly sized patches, automating data handling and ensuring consistent, repeatable preprocessing steps.
@@ -93,7 +93,7 @@ The workflow of the proposed CycleGAN-DeeplabV3 model is designed to perform uns
 
 3. **Segmentation Fine-Tuning:**
    - **Translated Image Dataset:** Translated images are automatically paired with original segmentation masks, forming a new training dataset that closely aligns with target domain conditions.
-   - **DeepLabV3 Model Training:** The segmentation model, featuring a ResNet101 backbone and ASPP module, undergoes fine-tuning on this translated dataset, utilizing early stopping guided by a custom mean Intersection-over-Union (mean IoU) metric to achieve optimal segmentation accuracy and prevent overfitting.
+   - **DeepLabV3 Model Training:** The segmentation model, featuring a ResNet50 backbone and ASPP module, undergoes fine-tuning on this translated dataset, utilizing early stopping guided by a custom mean Intersection-over-Union (mean IoU) metric to achieve optimal segmentation accuracy and prevent overfitting.
      
 4. **Output:**
    - **Segmentation Predictions:** The fine-tuned model produces pixel-level semantic segmentation masks on target domain images, accurately identifying classes such as buildings, vegetation, and roads, effectively overcoming the domain shift.
