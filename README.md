@@ -103,8 +103,9 @@ The workflow of the proposed CycleGAN-DeeplabV3 model is designed to perform uns
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/enhanced-stable-diffusion.git
-    cd enhanced-stable-diffusion
+    git clone https://github.com/BRAIN-Lab-AI/AeroAdapt-GAN.git
+    cd AeroAdapt-GAN
+
     ```
 
 2. **Set Up the Environment:**
@@ -115,16 +116,23 @@ The workflow of the proposed CycleGAN-DeeplabV3 model is designed to perform uns
     pip install -r requirements.txt
     ```
 
-3. **Train the Model:**
-    Configure the training parameters in the provided configuration file and run:
+3. **Run the Notebook:**
+    Open the Notebook and follow the cells to train and test the models:
     ```bash
-    python train.py --config configs/train_config.yaml
+    jupyter notebook AeroAdapt-GAN.ipynb
+    ```
+4. **Export or Convert to Script (Optional):**
+    If needed, notebook can be converted to a Python script:
+    ```bash
+    jupyter nbconvert --to script AeroAdapt-GAN.ipynb
+    python AeroAdapt-GAN.py
     ```
 
-4. **Generate Images:**
-    Once training is complete, use the inference script to generate images.
+4. **Generate Results:**
+    After training, check the outputs generated in the notebook. Adjust input settings or parameters in the cells if you want to try different conditions (e.g., for CycleGAN translation or segmentation evaluation)
+    Visual results (segmentation maps, translated images) are automatically saved to:
     ```bash
-    python inference.py --checkpoint path/to/checkpoint.pt --input "A surreal landscape with mountains and rivers"
+    ./results/
     ```
 
 ## Acknowledgments
