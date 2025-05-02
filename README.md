@@ -13,8 +13,8 @@ The proposed Enhanced CycleGAN-DeeplabV3 model is a cutting-edge deep learning a
 - **Affiliations:** KFUPM
 
 ### Project Documents
-- **Presentation:** [Project Presentation](/presentation.pptx)
-- **Report:** [Project Report](/report.pdf)
+- **Presentation:** [Project Presentation](https://github.com/BRAIN-Lab-AI/AeroAdapt-GAN/blob/main/AeroAdaptGAN_Presentation-FINAL.pptx)
+- **Report:** [Project Report](https://github.com/BRAIN-Lab-AI/AeroAdapt-GAN/blob/main/AeroAdapt-GAN_Project%20Report.pdf)
 
 ### Reference Paper
 - [Unsupervised Domain Adaptation Using Generative Adversarial Networks for Semantic Segmentation of Aerial Images](https://www.mdpi.com/2072-4292/11/11/1369)
